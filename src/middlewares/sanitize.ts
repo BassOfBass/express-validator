@@ -5,6 +5,11 @@ import { ContextBuilder } from '../context-builder';
 
 let hasNotified = false;
 
+/**
+ * @deprecated sanitize(), sanitizeBody() and other sanitization-only middlewares have been deprecated.
+ *
+ * Please use check(), body() and others instead, which must offer the same API, and more.
+ */
 export function sanitize(
   fields: string | string[] = '',
   locations: Location[] = [],
